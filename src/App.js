@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
+import Card from './components/Card';
 
 function App() {
   return (
+  /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,8 +20,18 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>*/
+   <div>
+    <Nav></Nav>
+    {/*replace div with react carousel library*/}
+    <div className="flex">
+    <Card text={"Tyler The Creator"}></Card>
+    <Card text={"Frank Ocean"}></Card>
+    </div>
     </div>
   );
+
+
 }
 
 export default App;
